@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shoosh Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <h1>Shoosh</h1>
+      <p>Block annoying, attention-stealing content.</p>
+    </header>
+
+    <main id="sections">
+
+      <section class="site-section" data-site="youtube">
+        <div class="site-header">
+          <div class="site-icon yt"></div>
+          <h2>YouTube</h2>
+        </div>
+        <div class="rules">
+
+          <label class="rule">
+            <div class="rule-text">
+              <span class="rule-title">Hide Shorts</span>
+              <span class="rule-desc">Removes Shorts shelves, items, and the sidebar entry. Redirects /shorts/ URLs to the normal video player.</span>
+            </div>
+            <div class="toggle">
+              <input type="checkbox" id="youtube.hideShorts">
+              <span class="slider"></span>
+            </div>
+          </label>
+
+          <label class="rule">
+            <div class="rule-text">
+              <span class="rule-title">Hide recommendations</span>
+              <span class="rule-desc">Hides the recommended videos sidebar on watch pages.</span>
+            </div>
+            <div class="toggle">
+              <input type="checkbox" id="youtube.hideRecommendations">
+              <span class="slider"></span>
+            </div>
+          </label>
+
+          <label class="rule">
+            <div class="rule-text">
+              <span class="rule-title">Hide comments</span>
+              <span class="rule-desc">Hides the comments section on watch pages.</span>
+            </div>
+            <div class="toggle">
+              <input type="checkbox" id="youtube.hideComments">
+              <span class="slider"></span>
+            </div>
+          </label>
+
+          <label class="rule">
+            <div class="rule-text">
+              <span class="rule-title">Redirect homepage to Subscriptions</span>
+              <span class="rule-desc">Automatically redirects youtube.com to your subscriptions feed.</span>
+            </div>
+            <div class="toggle">
+              <input type="checkbox" id="youtube.redirectHomepage">
+              <span class="slider"></span>
+            </div>
+          </label>
+
+          <label class="rule">
+            <div class="rule-text">
+              <span class="rule-title">Theater mode</span>
+              <span class="rule-desc">Automatically switches to theater mode on watch pages.</span>
+            </div>
+            <div class="toggle">
+              <input type="checkbox" id="youtube.theaterMode">
+              <span class="slider"></span>
+            </div>
+          </label>
+
+        </div>
+      </section>
+
+    </main>
+
+    <div class="saved-toast" id="toast">Saved</div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
